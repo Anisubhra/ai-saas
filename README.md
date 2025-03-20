@@ -31,6 +31,7 @@ Welcome to **Gene** — a powerful, scalable AI SaaS platform designed for creat
 
 3. **Set up environment variables:**
    Create a `.env` file in the root directory and add the following:
+   
 
 4. **Run development server:**
 
@@ -42,4 +43,4 @@ Designed with a clean, minimalist UI — keeping user experience smooth and mode
 
 ## 🔗 Links
 
-- **Live Demo:** [https://ai-saas-pi-orp
+- **Live Demo:** [https://ai-saas-pi-orpin.vercel.app/](https://ai-saas-pi-orpin.vercel.app/)
