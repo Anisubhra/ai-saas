@@ -1,13 +1,12 @@
 import { auth } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
-
-// import { checkSubscription } from "@/lib/subscription";
 import { incrementApiLimit, checkApiLimit } from "@/lib/api-limit";
 import { checkSubscription } from "@/lib/subscription";
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    baseURL: "https://openrouter.ai/api/v1",
+    apiKey: process.env.OPENROUTER_API_KEY,
 });
 
 export async function POST(
@@ -34,7 +33,7 @@ export async function POST(
         }
 
         const response = await openai.chat.completions.create({
-            model: 'gpt-3.5-turbo',
+            model: "deepseek/deepseek-r1:free",
             messages,
         });
 
